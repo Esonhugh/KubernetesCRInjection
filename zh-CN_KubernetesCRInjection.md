@@ -34,6 +34,7 @@
 2. 注入类型是 换行注入 
 3. 注入内容为 恶意 pod 配置
 4. PoC 为 在 annotation 下注入名称后 注入整个 Pod 的配置后 注入 secret 中有的 flag 信息
+5. https://paper.seebug.org/1882/ CVE-2022-21701 istio 类似
 
 ### Kubernetes - Nginx ingress controller CVE 
 
@@ -43,6 +44,7 @@
 4. https://hackerone.com/reports/1728174 lua 表达式注入 exec 
 6. https://hackerone.com/reports/1378175 nginx leak
 7.  CVE-2021-25742 and CVE-2021-25746
+8. CVE-2023-5044 https://raesene.github.io/blog/2023/10/29/exploiting-CVE-2023-5044/ lua 表达式 exec 
 
 ### 一个目前未被披露的漏洞 possible CVE unpublished vulnerability 
 

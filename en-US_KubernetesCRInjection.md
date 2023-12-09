@@ -31,17 +31,20 @@ Injections can be classified via 3 different way.
 ### jqctf2023 - Escape? Escaping translation! 
 
 1. The injection point is the lb-type annotation. 
-2. The injection type is newline injection.
+2. The injection type is newline injection / template injection and 
 3. The injected content is a malicious pod configuration. 
 4. The PoC involves injecting the entire Pod configuration after injecting a name in the annotation, and then injecting flag information present in the secret.
+5. It's same as CVE-2022-21701 istio https://paper.seebug.org/1882/ 
 
 ### Kubernetes - Nginx ingress controller CVE
 
 1.	The injection point is the annotation.
 2.	The injection type is delimiter injection (;).
 3.	The injected content can be an nginx configuration file or a Lua script that can leak service account information.
-4.	Reference: https://hackerone.com/reports/1728174 (Lua expression injection exec), https://hackerone.com/reports/1378175 (nginx leak)
-5. CVE-2021-25742 and CVE-2021-25746.
+4. Reference: https://hackerone.com/reports/1728174 (Lua expression injection exec)  
+5. https://hackerone.com/reports/1378175 (nginx leak)
+6. CVE-2021-25742 and CVE-2021-25746.
+7. CVE-2023-5044 https://raesene.github.io/blog/2023/10/29/exploiting-CVE-2023-5044/ lua injection exec 
 
 ### An undisclosed vulnerability possible CVE unpublished vulnerability
 
