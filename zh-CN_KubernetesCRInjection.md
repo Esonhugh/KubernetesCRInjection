@@ -59,3 +59,7 @@
 1. CRD kubernetes document: https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/
 2. CRD validation kubernetes document: https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#validation
 3. OpenApi v3 schema: https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md#schemaObject
+
+## 较易受影响的服务
+
+这类漏洞产生原因是主要是由于 CRD 控制器的设计问题。因为在多用户的场景或者 SaaS 场景下，用户可能可以间接或者直接控制集群内部的某些资源（可能是 CRD 资源，也可能是其他资源），而这些资源的控制器可能直接或者间接的拼接用户可控的数据，从而导致此类注入漏洞，并且进一步危害集群内部的安全。

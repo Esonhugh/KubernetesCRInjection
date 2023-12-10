@@ -59,3 +59,7 @@ Injections can be classified via 3 different way.
 1. CRD kubernetes document: https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/
 2. CRD validation kubernetes document: https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#validation
 3. OpenApi v3 schema: https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.0.md#schemaObject
+
+## Services Prone to Impact
+
+The main cause of these vulnerabilities is primarily due to design issues with CRD controllers. In multi-user or SaaS scenarios, users may have indirect or direct control over certain resources within the cluster (which could be CRD resources or other resources). The controllers for these resources may directly or indirectly concatenate user-controlled data, leading to injection vulnerabilities of this nature and further compromising the security within the cluster.
