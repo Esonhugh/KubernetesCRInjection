@@ -6,8 +6,10 @@ Here is a common vulnerability when Kubernetes Controller designed.
 ### [EnglishVersion](en-US_KubernetesCRInjection.md)
 
 
-### Thanks
+### Thanks for advice and more information
 
 [Zenis](https://github.com/ZenisLtz)
 
 [lobuhi](https://github.com/lobuhi)
+
+[Teamssix](https://github.com/teamssix)
