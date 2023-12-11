@@ -41,10 +41,9 @@
 1. 注入点为 annotation
 2. 注入类型是 结束符注入 ; 
 3. 注入内容是  nginx 配置文件 或者 lua 脚本 可以任意读泄漏 serviceaccount
-4. https://hackerone.com/reports/1728174 lua 表达式注入 exec 
-6. https://hackerone.com/reports/1378175 nginx leak
-7.  CVE-2021-25742 and CVE-2021-25746
-8. CVE-2023-5044 https://raesene.github.io/blog/2023/10/29/exploiting-CVE-2023-5044/ lua 表达式 exec 
+4. https://hackerone.com/reports/1728174 lua 表达式注入 exec  CVE-2021-25742 and CVE-2021-25746 
+5. https://hackerone.com/reports/1378175 nginx controller file leak
+6. CVE-2023-5044 https://raesene.github.io/blog/2023/10/29/exploiting-CVE-2023-5044/ lua 表达式 exec 
 
 ### 一个目前未被披露的漏洞 possible CVE unpublished vulnerability 
 

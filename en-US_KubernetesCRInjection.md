@@ -41,10 +41,9 @@ Injections can be classified via 3 different way.
 1.	The injection point is the annotation.
 2.	The injection type is delimiter injection (;).
 3.	The injected content can be an nginx configuration file or a Lua script that can leak service account information.
-4. Reference: https://hackerone.com/reports/1728174 (Lua expression injection exec)  
-5. https://hackerone.com/reports/1378175 (nginx leak)
-6. CVE-2021-25742 and CVE-2021-25746.
-7. CVE-2023-5044 https://raesene.github.io/blog/2023/10/29/exploiting-CVE-2023-5044/ lua injection exec 
+4. Reference: https://hackerone.com/reports/1728174 (Lua expression injection exec) CVE-2021-25742 and CVE-2021-25746. 
+5. https://hackerone.com/reports/1378175 (nginx controller file leak)
+6. CVE-2023-5044 https://raesene.github.io/blog/2023/10/29/exploiting-CVE-2023-5044/ lua injection exec 
 
 ### An undisclosed vulnerability possible CVE unpublished vulnerability
 
